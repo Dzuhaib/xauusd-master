@@ -1,26 +1,68 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --wa-green: #25d366;
+  --wa-green-dark: #128c7e;
+  --wa-green-hover: #1ebe57;
+  --wa-bg-dark: #0b141a;
+  --wa-panel: #1f2c34;
+  --wa-panel-light: #2a3942;
+  --wa-text-primary: #e9edef;
+  --wa-text-secondary: #8696a0;
+  --wa-gold: #ffd700;
+  --wa-red: #ff6b6b;
+  --wa-hit-bg: #0d2c1e;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html, body {
+  height: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--wa-bg-dark);
+  color: var(--wa-text-primary);
+  overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+#__next, main {
+  height: 100%;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--wa-panel-light); border-radius: 4px; }
+
+/* Chat background pattern */
+.chat-bg {
+  background-color: var(--wa-bg-dark);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cdefs%3E%3Cpattern id='p' width='80' height='80' patternUnits='userSpaceOnUse'%3E%3Ccircle cx='10' cy='10' r='1.5' fill='%23182229' opacity='0.7'/%3E%3Ccircle cx='50' cy='10' r='1.5' fill='%23182229' opacity='0.7'/%3E%3Ccircle cx='30' cy='40' r='1.5' fill='%23182229' opacity='0.7'/%3E%3Ccircle cx='70' cy='40' r='1.5' fill='%23182229' opacity='0.7'/%3E%3Ccircle cx='10' cy='70' r='1.5' fill='%23182229' opacity='0.7'/%3E%3Ccircle cx='50' cy='70' r='1.5' fill='%23182229' opacity='0.7'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23p)'/%3E%3C/svg%3E");
+}
+
+/* Pulse animation for live badge */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.9); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.35s ease forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease forwards;
 }

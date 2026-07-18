@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 
 const CHANNEL_URL = "https://t.me/+oJRrg4PLNSllY2Zk";
 
@@ -25,12 +24,12 @@ export default function Home() {
         zIndex: 10,
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <Image
+          <img
             src="/logo.jpeg"
             alt="الذهب/الدولار ماستر🔰"
-            width={46}
-            height={46}
             style={{
+              width: 46,
+              height: 46,
               borderRadius: "50%",
               objectFit: "cover",
               flexShrink: 0,
@@ -91,12 +90,12 @@ export default function Home() {
           width: "100%",
           border: "1px solid var(--tg-panel-light)",
         }}>
-          <Image
+          <img
             src="/logo.jpeg"
             alt="الذهب/الدولار ماستر🔰"
-            width={96}
-            height={96}
             style={{
+              width: 96,
+              height: 96,
               borderRadius: "50%",
               objectFit: "cover",
               marginBottom: 16,

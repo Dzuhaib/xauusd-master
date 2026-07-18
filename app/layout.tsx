@@ -3,10 +3,10 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "XAUUSD MASTER – إشارات الذهب المميزة",
-  description: "تابع XAUUSD MASTER للحصول على إشارات دقيقة لتداول الذهب يومياً. انضم إلى قناتنا على تيليجرام لتحليل XAUUSD في الوقت الفعلي.",
+  title: "الذهب/الدولار ماستر🔰 – إشارات الذهب المميزة",
+  description: "تابع الذهب/الدولار ماستر🔰 للحصول على إشارات دقيقة لتداول الذهب يومياً. انضم إلى قناتنا على تيليجرام لتحليل XAUUSD في الوقت الفعلي.",
   openGraph: {
-    title: "XAUUSD MASTER – إشارات الذهب المميزة",
+    title: "الذهب/الدولار ماستر🔰 – إشارات الذهب المميزة",
     description: "إشارات XAUUSD دقيقة. تحليل يومي لسوق الذهب.",
     type: "website",
   },

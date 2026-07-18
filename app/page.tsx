@@ -27,7 +27,7 @@ export default function Home() {
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <Image
             src="/logo.jpeg"
-            alt="XAUUSD MASTER"
+            alt="الذهب/الدولار ماستر🔰"
             width={46}
             height={46}
             style={{
@@ -39,7 +39,7 @@ export default function Home() {
           />
           <div>
             <h1 style={{ fontSize: 16, fontWeight: 700, color: "var(--tg-text-primary)", letterSpacing: 0.3 }}>
-              XAUUSD MASTER
+              الذهب/الدولار ماستر🔰
             </h1>
             <p style={{ fontSize: 12, color: "var(--tg-text-secondary)", marginTop: 1 }}>
               القناة · 4.2K متابع
@@ -93,7 +93,7 @@ export default function Home() {
         }}>
           <Image
             src="/logo.jpeg"
-            alt="XAUUSD MASTER"
+            alt="الذهب/الدولار ماستر🔰"
             width={96}
             height={96}
             style={{
@@ -103,7 +103,7 @@ export default function Home() {
               boxShadow: "0 4px 16px rgba(42,171,238,0.3)",
             }}
           />
-          <div style={{ fontSize: 22, fontWeight: 700, color: "var(--tg-text-primary)" }}>XAUUSD MASTER</div>
+          <div style={{ fontSize: 22, fontWeight: 700, color: "var(--tg-text-primary)" }}>الذهب/الدولار ماستر🔰</div>
           <div style={{ fontSize: 13, color: "var(--tg-text-secondary)", marginTop: 8, lineHeight: 1.7 }}>
             إشارات الذهب المميزة · تداول دقيق · تحليل يومي
           </div>
@@ -201,7 +201,7 @@ export default function Home() {
           }}
         >
           <TelegramIcon />
-          تابع XAUUSD MASTER
+          تابع الذهب/الدولار ماستر🔰
         </a>
       </footer>
 

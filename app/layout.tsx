@@ -3,11 +3,11 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "XAUUSD MASTER – Premium Gold Signals",
-  description: "Follow XAUUSD MASTER for daily precision gold trading signals. All 5 TPs hit today! Join our Telegram channel for real-time XAUUSD analysis.",
+  title: "XAUUSD MASTER – إشارات الذهب المميزة",
+  description: "تابع XAUUSD MASTER للحصول على إشارات دقيقة لتداول الذهب يومياً. انضم إلى قناتنا على تيليجرام لتحليل XAUUSD في الوقت الفعلي.",
   openGraph: {
-    title: "XAUUSD MASTER – Premium Gold Signals",
-    description: "Precision XAUUSD signals. All 5 TPs hit today!",
+    title: "XAUUSD MASTER – إشارات الذهب المميزة",
+    description: "إشارات XAUUSD دقيقة. تحليل يومي لسوق الذهب.",
     type: "website",
   },
 };
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ar" dir="rtl">
       <head>
         <Script id="meta-pixel" strategy="afterInteractive">
           {`

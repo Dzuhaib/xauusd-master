@@ -8,15 +8,12 @@
 
 :root {
   --tg-blue: #2AABEE;
-  --tg-blue-dark: #0088cc;
   --tg-blue-hover: #1e96d4;
   --tg-bg-dark: #17212b;
   --tg-panel: #242f3d;
   --tg-panel-light: #3a4a5c;
   --tg-text-primary: #e9edef;
   --tg-text-secondary: #858e99;
-  --tg-gold: #ffd700;
-  --tg-red: #ff6b6b;
   --tg-hit-bg: #0d2b45;
 }
 
@@ -49,20 +46,7 @@ html, body {
   50% { opacity: 0.6; transform: scale(0.9); }
 }
 
-@keyframes slideIn {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
-}
-
-.animate-slide-in {
-  animation: slideIn 0.35s ease forwards;
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.4s ease forwards;
 }

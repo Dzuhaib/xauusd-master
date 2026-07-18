@@ -130,6 +130,31 @@ export default function Home() {
             القناة الرسمية
           </div>
         </div>
+
+        <div className="animate-fade-in" style={{
+          background: "var(--tg-panel)",
+          borderRadius: 16,
+          padding: "24px 20px",
+          marginTop: 16,
+          maxWidth: 360,
+          width: "100%",
+          border: "1px solid var(--tg-panel-light)",
+          textAlign: "right",
+        }}>
+          <div style={{ fontSize: 15, fontWeight: 700, color: "var(--tg-blue)", marginBottom: 14 }}>
+            📈 إشارات احترافية لتداول الذهب (XAUUSD)
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 10, fontSize: 13, color: "var(--tg-text-primary)", lineHeight: 1.8 }}>
+            <div>🎯 إشارات يومية دقيقة</div>
+            <div>📊 تحليلات احترافية للسوق</div>
+            <div>💰 نستهدف حتى 5000 نقطة (Pips) أسبوعيًا حسب ظروف السوق</div>
+            <div>🛡️ إدارة مخاطر ورأس مال باحترافية</div>
+            <div>⚡ تحديثات مباشرة ودعم مستمر</div>
+          </div>
+          <div style={{ fontSize: 14, fontWeight: 600, color: "var(--tg-blue)", marginTop: 14 }}>
+            🚀 انضم إلينا وابدأ التداول بثقة.
+          </div>
+        </div>
       </div>
 
       <footer style={{

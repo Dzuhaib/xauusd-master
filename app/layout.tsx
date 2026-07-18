@@ -3,10 +3,10 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "HawkEye XAUUSD – Premium Gold Signals",
-  description: "Follow HawkEye XAUUSD for daily precision gold trading signals. All 5 TPs hit today! Join our WhatsApp channel for real-time XAUUSD analysis.",
+  title: "XAUUSD MASTER – Premium Gold Signals",
+  description: "Follow XAUUSD MASTER for daily precision gold trading signals. All 5 TPs hit today! Join our Telegram channel for real-time XAUUSD analysis.",
   openGraph: {
-    title: "HawkEye XAUUSD – Premium Gold Signals",
+    title: "XAUUSD MASTER – Premium Gold Signals",
     description: "Precision XAUUSD signals. All 5 TPs hit today!",
     type: "website",
   },

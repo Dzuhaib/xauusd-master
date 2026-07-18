@@ -1,18 +1,17 @@
 "use client";
 import { useEffect, useRef } from "react";
 
-const CHANNEL_URL = "https://whatsapp.com/channel/0029VbCx7zLIyPtPPzat4A0a";
+const CHANNEL_URL = "https://t.me/+oJRrg4PLNSllY2Zk";
 
 const EyeIcon = () => (
-  <svg viewBox="0 0 24 24" width="15" height="15" style={{ fill: "var(--wa-text-secondary)", flexShrink: 0 }}>
+  <svg viewBox="0 0 24 24" width="15" height="15" style={{ fill: "var(--tg-text-secondary)", flexShrink: 0 }}>
     <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
   </svg>
 );
 
-const WaIcon = () => (
+const TelegramIcon = () => (
   <svg viewBox="0 0 24 24" width="20" height="20" style={{ fill: "#fff", flexShrink: 0 }}>
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.546 5.877L0 24l6.296-1.516A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.368l-.36-.213-3.737.9.938-3.634-.235-.374A9.818 9.818 0 1112 21.818z" />
+    <path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
   </svg>
 );
 
@@ -29,7 +28,7 @@ function TPHitBubble({ tp, price, time, views, isLast }: TPHitProps) {
     1: "Profit secured 🔥 Move SL to entry now.",
     2: "Beautiful move 💰 Holding rest for more.",
     3: "Gold dropping like clockwork 📉 Stay patient.",
-    4: "HawkEye precision 🦅 TP5 incoming!",
+    4: "XAUUSD MASTER precision 🦅 TP5 incoming!",
     5: "FULL SWEEP! 🎊 All 5 TPs secured! Congrats to all who followed! 💎",
   };
 
@@ -41,27 +40,27 @@ function TPHitBubble({ tp, price, time, views, isLast }: TPHitProps) {
       marginBottom: tp === 5 ? "20px" : "6px",
     }}>
       <div style={{
-        background: isLast ? "var(--wa-hit-bg)" : "var(--wa-panel)",
-        border: isLast ? "1px solid var(--wa-green)" : "none",
+        background: isLast ? "var(--tg-hit-bg)" : "var(--tg-panel)",
+        border: isLast ? "1px solid var(--tg-green)" : "none",
         borderRadius: "0 10px 10px 10px",
         padding: "10px 14px",
         maxWidth: "380px",
         boxShadow: "0 1px 3px rgba(0,0,0,0.35)",
       }}>
-        <div style={{ fontSize: isLast ? "15px" : "14px", fontWeight: 700, color: "var(--wa-green)", marginBottom: 5 }}>
+        <div style={{ fontSize: isLast ? "15px" : "14px", fontWeight: 700, color: "var(--tg-green)", marginBottom: 5 }}>
           {isLast ? `🏆 ALL 5 TARGETS HIT ✅✅✅` : `🎯 TARGET ${tp} HIT ✅`}
         </div>
-        <div style={{ fontSize: "13px", color: "var(--wa-text-primary)", lineHeight: 1.6 }}>
-          <span style={{ color: "var(--wa-green)" }}>✔ </span>
-          XAUUSD SELL — TP{tp} <span style={{ color: "var(--wa-gold)", fontWeight: 700 }}>{price}</span> reached!
+        <div style={{ fontSize: "13px", color: "var(--tg-text-primary)", lineHeight: 1.6 }}>
+          <span style={{ color: "var(--tg-green)" }}>✔ </span>
+          XAUUSD SELL — TP{tp} <span style={{ color: "var(--tg-gold)", fontWeight: 700 }}>{price}</span> reached!
           <br />
           {messages[tp]}
         </div>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 7 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 4, color: "var(--wa-text-secondary)", fontSize: 11 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 4, color: "var(--tg-text-secondary)", fontSize: 11 }}>
             <EyeIcon /> {views}
           </div>
-          <span style={{ fontSize: 11, color: "var(--wa-text-secondary)" }}>{time}</span>
+          <span style={{ fontSize: 11, color: "var(--tg-text-secondary)" }}>{time}</span>
         </div>
       </div>
     </div>
@@ -82,8 +81,8 @@ export default function Home() {
 
       {/* ── HEADER ── */}
       <header style={{
-        background: "var(--wa-panel)",
-        borderBottom: "1px solid var(--wa-panel-light)",
+        background: "var(--tg-panel)",
+        borderBottom: "1px solid var(--tg-panel-light)",
         padding: "10px 16px",
         display: "flex",
         alignItems: "center",
@@ -98,20 +97,20 @@ export default function Home() {
             width: 46,
             height: 46,
             borderRadius: "50%",
-            background: "linear-gradient(135deg, #25d366, #128c7e)",
+            background: "linear-gradient(135deg, #2AABEE, #0088cc)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             fontSize: 22,
             flexShrink: 0,
-            boxShadow: "0 2px 8px rgba(37,211,102,0.35)",
+            boxShadow: "0 2px 8px rgba(42,171,238,0.35)",
           }}>🦅</div>
 
           <div>
-            <h1 style={{ fontSize: 16, fontWeight: 700, color: "var(--wa-text-primary)", letterSpacing: 0.3 }}>
-              HawkEye XAUUSD
+            <h1 style={{ fontSize: 16, fontWeight: 700, color: "var(--tg-text-primary)", letterSpacing: 0.3 }}>
+              XAUUSD MASTER
             </h1>
-            <p style={{ fontSize: 12, color: "var(--wa-text-secondary)", marginTop: 1 }}>
+            <p style={{ fontSize: 12, color: "var(--tg-text-secondary)", marginTop: 1 }}>
               Channel · 4.2K followers
             </p>
           </div>
@@ -123,7 +122,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
           style={{
-            background: "var(--wa-green)",
+            background: "var(--tg-green)",
             color: "#fff",
             textDecoration: "none",
             borderRadius: 22,
@@ -134,8 +133,8 @@ export default function Home() {
             transition: "background 0.2s",
             flexShrink: 0,
           }}
-          onMouseEnter={e => (e.currentTarget.style.background = "var(--wa-green-hover)")}
-          onMouseLeave={e => (e.currentTarget.style.background = "var(--wa-green)")}
+          onMouseEnter={e => (e.currentTarget.style.background = "var(--tg-green-hover)")}
+          onMouseLeave={e => (e.currentTarget.style.background = "var(--tg-green)")}
         >
           Follow Channel
         </a>
@@ -153,28 +152,28 @@ export default function Home() {
       >
         {/* Channel Banner */}
         <div className="animate-fade-in" style={{
-          background: "var(--wa-panel)",
+          background: "var(--tg-panel)",
           borderRadius: 12,
           padding: "18px 16px",
           textAlign: "center",
           marginBottom: 16,
-          border: "1px solid var(--wa-panel-light)",
+          border: "1px solid var(--tg-panel-light)",
         }}>
           <div style={{ fontSize: 36, marginBottom: 8 }}>🦅</div>
-          <div style={{ fontSize: 18, fontWeight: 700, color: "var(--wa-text-primary)" }}>HawkEye XAUUSD</div>
-          <div style={{ fontSize: 12, color: "var(--wa-text-secondary)", marginTop: 4 }}>
+          <div style={{ fontSize: 18, fontWeight: 700, color: "var(--tg-text-primary)" }}>XAUUSD MASTER</div>
+          <div style={{ fontSize: 12, color: "var(--tg-text-secondary)", marginTop: 4 }}>
             Premium Gold Signals · Precision Trading · Daily Analysis
           </div>
           <div style={{
             display: "inline-flex",
             alignItems: "center",
             gap: 6,
-            background: "var(--wa-hit-bg)",
-            border: "1px solid var(--wa-green)",
+            background: "var(--tg-hit-bg)",
+            border: "1px solid var(--tg-green)",
             borderRadius: 12,
             padding: "4px 12px",
             fontSize: 12,
-            color: "var(--wa-green)",
+            color: "var(--tg-green)",
             marginTop: 10,
             fontWeight: 600,
           }}>
@@ -182,7 +181,7 @@ export default function Home() {
               width: 7,
               height: 7,
               borderRadius: "50%",
-              background: "var(--wa-green)",
+              background: "var(--tg-green)",
               display: "inline-block",
               animation: "pulse 1.5s infinite",
             }} />
@@ -193,8 +192,8 @@ export default function Home() {
         {/* Date Divider */}
         <div style={{ textAlign: "center", margin: "12px 0" }}>
           <span style={{
-            background: "var(--wa-panel)",
-            color: "var(--wa-text-secondary)",
+            background: "var(--tg-panel)",
+            color: "var(--tg-text-secondary)",
             fontSize: 12,
             padding: "5px 14px",
             borderRadius: 8,
@@ -210,7 +209,7 @@ export default function Home() {
           marginBottom: 10,
         }}>
           <div style={{
-            background: "var(--wa-panel)",
+            background: "var(--tg-panel)",
             borderRadius: "0 10px 10px 10px",
             padding: "12px 14px",
             maxWidth: 440,
@@ -218,29 +217,29 @@ export default function Home() {
             boxShadow: "0 1px 4px rgba(0,0,0,0.35)",
           }}>
             {/* Signal Header */}
-            <div style={{ fontSize: 15, fontWeight: 800, color: "var(--wa-green)", letterSpacing: 0.4, marginBottom: 6 }}>
+            <div style={{ fontSize: 15, fontWeight: 800, color: "var(--tg-green)", letterSpacing: 0.4, marginBottom: 6 }}>
               ─𝐗𝐀𝐔𝐔𝐒𝐃 (𝐆𝐎𝐋𝐃) SELL 𝐍𝐨𝐰 ✅
             </div>
-            <div style={{ color: "var(--wa-text-secondary)", fontSize: 13, marginBottom: 8, letterSpacing: 2 }}>
+            <div style={{ color: "var(--tg-text-secondary)", fontSize: 13, marginBottom: 8, letterSpacing: 2 }}>
               ────────────────
             </div>
 
             {/* Entry */}
             <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 14, marginBottom: 6 }}>
               <span>🔮</span>
-              <span style={{ fontWeight: 600, color: "var(--wa-text-primary)" }}>𝐄𝐍𝐓𝐑𝐘 GOLD:</span>
-              <span style={{ color: "var(--wa-gold)", fontWeight: 700 }}>4675 – 4673</span>
+              <span style={{ fontWeight: 600, color: "var(--tg-text-primary)" }}>𝐄𝐍𝐓𝐑𝐘 GOLD:</span>
+              <span style={{ color: "var(--tg-gold)", fontWeight: 700 }}>4675 – 4673</span>
             </div>
 
             {/* Stop Loss */}
             <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 14, marginBottom: 10 }}>
               <span>❎</span>
-              <span style={{ fontWeight: 600, color: "var(--wa-text-primary)" }}>𝐒𝐓𝐎𝐏 𝐋𝐎𝐒𝐒:</span>
-              <span style={{ color: "var(--wa-red)", fontWeight: 700 }}>4687</span>
+              <span style={{ fontWeight: 600, color: "var(--tg-text-primary)" }}>𝐒𝐓𝐎𝐏 𝐋𝐎𝐒𝐒:</span>
+              <span style={{ color: "var(--tg-red)", fontWeight: 700 }}>4687</span>
             </div>
 
             {/* Targets heading */}
-            <div style={{ fontSize: 13, color: "var(--wa-text-primary)", marginBottom: 6 }}>
+            <div style={{ fontSize: 13, color: "var(--tg-text-primary)", marginBottom: 6 }}>
               ⚠️ &nbsp;<strong>𝐓𝐀𝐑𝐆𝐄𝐓𝐒:</strong>
             </div>
 
@@ -254,10 +253,10 @@ export default function Home() {
             ].map(({ n, price }) => (
               <div key={n} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 14, marginBottom: 4 }}>
                 <span>💎</span>
-                <span style={{ color: "var(--wa-text-secondary)" }}>TP {n} _</span>
-                <span style={{ color: "var(--wa-text-primary)", fontWeight: 600 }}>{price}</span>
+                <span style={{ color: "var(--tg-text-secondary)" }}>TP {n} _</span>
+                <span style={{ color: "var(--tg-text-primary)", fontWeight: 600 }}>{price}</span>
                 <span style={{
-                  background: "var(--wa-green)",
+                  background: "var(--tg-green)",
                   color: "#fff",
                   fontSize: 10,
                   fontWeight: 700,
@@ -274,21 +273,21 @@ export default function Home() {
               alignItems: "center",
               gap: 6,
               fontSize: 13,
-              color: "var(--wa-text-secondary)",
+              color: "var(--tg-text-secondary)",
               marginTop: 10,
               paddingTop: 10,
-              borderTop: "1px solid var(--wa-panel-light)",
+              borderTop: "1px solid var(--tg-panel-light)",
             }}>
-              💣 &nbsp;<strong style={{ color: "var(--wa-text-primary)" }}>𝐍𝐎𝐓𝐄:</strong>
+              💣 &nbsp;<strong style={{ color: "var(--tg-text-primary)" }}>𝐍𝐎𝐓𝐄:</strong>
               &nbsp;𝐔𝐬𝐞 𝐩𝐫𝐨𝐩𝐞𝐫 𝐫𝐢𝐬𝐤 𝐦𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭!
             </div>
 
             {/* Message meta */}
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 10 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 4, color: "var(--wa-text-secondary)", fontSize: 11 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 4, color: "var(--tg-text-secondary)", fontSize: 11 }}>
                 <EyeIcon /> 1.4K
               </div>
-              <span style={{ fontSize: 11, color: "var(--wa-text-secondary)" }}>11:02 AM</span>
+              <span style={{ fontSize: 11, color: "var(--tg-text-secondary)" }}>11:02 AM</span>
             </div>
           </div>
         </div>
@@ -304,8 +303,8 @@ export default function Home() {
 
       {/* ── FOOTER ── */}
       <footer style={{
-        background: "var(--wa-panel)",
-        borderTop: "1px solid var(--wa-panel-light)",
+        background: "var(--tg-panel)",
+        borderTop: "1px solid var(--tg-panel-light)",
         padding: "14px 16px",
         display: "flex",
         flexDirection: "column",
@@ -313,8 +312,8 @@ export default function Home() {
         gap: 10,
         flexShrink: 0,
       }}>
-        <p style={{ fontSize: 12, color: "var(--wa-text-secondary)", textAlign: "center" }}>
-          Get daily XAUUSD signals &amp; gold market analysis — follow us on WhatsApp
+        <p style={{ fontSize: 12, color: "var(--tg-text-secondary)", textAlign: "center" }}>
+          Get daily XAUUSD signals &amp; gold market analysis — join us on Telegram
         </p>
         <a
           href={CHANNEL_URL}
@@ -324,29 +323,29 @@ export default function Home() {
             display: "inline-flex",
             alignItems: "center",
             gap: 9,
-            background: "var(--wa-green)",
+            background: "var(--tg-green)",
             color: "#fff",
             textDecoration: "none",
             borderRadius: 26,
             padding: "11px 26px",
             fontSize: 14,
             fontWeight: 600,
-            boxShadow: "0 3px 12px rgba(37,211,102,0.35)",
+            boxShadow: "0 3px 12px rgba(42,171,238,0.35)",
             transition: "background 0.2s, transform 0.15s, box-shadow 0.2s",
           }}
           onMouseEnter={e => {
-            e.currentTarget.style.background = "var(--wa-green-hover)";
+            e.currentTarget.style.background = "var(--tg-green-hover)";
             e.currentTarget.style.transform = "translateY(-2px)";
-            e.currentTarget.style.boxShadow = "0 6px 18px rgba(37,211,102,0.45)";
+            e.currentTarget.style.boxShadow = "0 6px 18px rgba(42,171,238,0.45)";
           }}
           onMouseLeave={e => {
-            e.currentTarget.style.background = "var(--wa-green)";
+            e.currentTarget.style.background = "var(--tg-green)";
             e.currentTarget.style.transform = "translateY(0)";
-            e.currentTarget.style.boxShadow = "0 3px 12px rgba(37,211,102,0.35)";
+            e.currentTarget.style.boxShadow = "0 3px 12px rgba(42,171,238,0.35)";
           }}
         >
-          <WaIcon />
-          Follow HawkEye XAUUSD
+          <TelegramIcon />
+          Follow XAUUSD MASTER
         </a>
       </footer>
 

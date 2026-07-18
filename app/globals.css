@@ -7,24 +7,24 @@
 }
 
 :root {
-  --wa-green: #25d366;
-  --wa-green-dark: #128c7e;
-  --wa-green-hover: #1ebe57;
-  --wa-bg-dark: #0b141a;
-  --wa-panel: #1f2c34;
-  --wa-panel-light: #2a3942;
-  --wa-text-primary: #e9edef;
-  --wa-text-secondary: #8696a0;
-  --wa-gold: #ffd700;
-  --wa-red: #ff6b6b;
-  --wa-hit-bg: #0d2c1e;
+  --tg-blue: #2AABEE;
+  --tg-blue-dark: #0088cc;
+  --tg-blue-hover: #1e96d4;
+  --tg-bg-dark: #17212b;
+  --tg-panel: #242f3d;
+  --tg-panel-light: #3a4a5c;
+  --tg-text-primary: #e9edef;
+  --tg-text-secondary: #858e99;
+  --tg-gold: #ffd700;
+  --tg-red: #ff6b6b;
+  --tg-hit-bg: #0d2b45;
 }
 
 html, body {
   height: 100%;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: var(--wa-bg-dark);
-  color: var(--wa-text-primary);
+  background: var(--tg-bg-dark);
+  color: var(--tg-text-primary);
   overflow: hidden;
 }
 
@@ -35,11 +35,11 @@ html, body {
 /* Scrollbar */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--wa-panel-light); border-radius: 4px; }
+::-webkit-scrollbar-thumb { background: var(--tg-panel-light); border-radius: 4px; }
 
 /* Chat background pattern */
 .chat-bg {
-  background-color: var(--wa-bg-dark);
+  background-color: var(--tg-bg-dark);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cdefs%3E%3Cpattern id='p' width='80' height='80' patternUnits='userSpaceOnUse'%3E%3Ccircle cx='10' cy='10' r='1.5' fill='%23182229' opacity='0.7'/%3E%3Ccircle cx='50' cy='10' r='1.5' fill='%23182229' opacity='0.7'/%3E%3Ccircle cx='30' cy='40' r='1.5' fill='%23182229' opacity='0.7'/%3E%3Ccircle cx='70' cy='40' r='1.5' fill='%23182229' opacity='0.7'/%3E%3Ccircle cx='10' cy='70' r='1.5' fill='%23182229' opacity='0.7'/%3E%3Ccircle cx='50' cy='70' r='1.5' fill='%23182229' opacity='0.7'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23p)'/%3E%3C/svg%3E");
 }
 

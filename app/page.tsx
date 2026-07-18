@@ -129,6 +129,44 @@ export default function Home() {
             }} />
             القناة الرسمية
           </div>
+
+          <div style={{ borderTop: "1px solid var(--tg-panel-light)", margin: "20px -24px 0", padding: "16px 24px 0" }}>
+            <p style={{ fontSize: 12, color: "var(--tg-text-secondary)", textAlign: "center", marginBottom: 12 }}>
+              احصل على إشارات XAUUSD اليومية وتحليل سوق الذهب — انضم إلينا على تيليجرام
+            </p>
+            <a
+              href={CHANNEL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 9,
+                background: "var(--tg-blue)",
+                color: "#fff",
+                textDecoration: "none",
+                borderRadius: 26,
+                padding: "11px 26px",
+                fontSize: 14,
+                fontWeight: 600,
+                boxShadow: "0 3px 12px rgba(42,171,238,0.35)",
+                transition: "background 0.2s, transform 0.15s, box-shadow 0.2s",
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.background = "var(--tg-blue-hover)";
+                e.currentTarget.style.transform = "translateY(-2px)";
+                e.currentTarget.style.boxShadow = "0 6px 18px rgba(42,171,238,0.45)";
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.background = "var(--tg-blue)";
+                e.currentTarget.style.transform = "translateY(0)";
+                e.currentTarget.style.boxShadow = "0 3px 12px rgba(42,171,238,0.35)";
+              }}
+            >
+              <TelegramIcon />
+              تابع الذهب/الدولار ماستر🔰
+            </a>
+          </div>
         </div>
 
         <div className="animate-fade-in" style={{
@@ -156,53 +194,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <footer style={{
-        background: "var(--tg-panel)",
-        borderTop: "1px solid var(--tg-panel-light)",
-        padding: "14px 16px",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: 10,
-        flexShrink: 0,
-      }}>
-        <p style={{ fontSize: 12, color: "var(--tg-text-secondary)", textAlign: "center" }}>
-          احصل على إشارات XAUUSD اليومية وتحليل سوق الذهب — انضم إلينا على تيليجرام
-        </p>
-        <a
-          href={CHANNEL_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: 9,
-            background: "var(--tg-blue)",
-            color: "#fff",
-            textDecoration: "none",
-            borderRadius: 26,
-            padding: "11px 26px",
-            fontSize: 14,
-            fontWeight: 600,
-            boxShadow: "0 3px 12px rgba(42,171,238,0.35)",
-            transition: "background 0.2s, transform 0.15s, box-shadow 0.2s",
-          }}
-          onMouseEnter={e => {
-            e.currentTarget.style.background = "var(--tg-blue-hover)";
-            e.currentTarget.style.transform = "translateY(-2px)";
-            e.currentTarget.style.boxShadow = "0 6px 18px rgba(42,171,238,0.45)";
-          }}
-          onMouseLeave={e => {
-            e.currentTarget.style.background = "var(--tg-blue)";
-            e.currentTarget.style.transform = "translateY(0)";
-            e.currentTarget.style.boxShadow = "0 3px 12px rgba(42,171,238,0.35)";
-          }}
-        >
-          <TelegramIcon />
-          تابع الذهب/الدولار ماستر🔰
-        </a>
-      </footer>
 
       <style>{`
         @keyframes pulse {

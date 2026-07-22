@@ -10,7 +10,7 @@ const TelegramIcon = () => (
 
 export default function Home() {
   return (
-    <div dir="rtl" style={{ display: "flex", flexDirection: "column", height: "100vh", overflow: "hidden" }}>
+    <div dir="ltr" style={{ display: "flex", flexDirection: "column", height: "100vh", overflow: "hidden" }}>
 
       <header style={{
         background: "var(--tg-panel)",
@@ -26,7 +26,7 @@ export default function Home() {
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <img
             src="/logo.jpeg"
-            alt="الذهب/الدولار ماستر🔰"
+            alt="Gold/USD Master 🔰"
             style={{
               width: 46,
               height: 46,
@@ -38,10 +38,10 @@ export default function Home() {
           />
           <div>
             <h1 style={{ fontSize: 16, fontWeight: 700, color: "var(--tg-text-primary)", letterSpacing: 0.3 }}>
-              الذهب/الدولار ماستر🔰
+              Gold/USD Master 🔰
             </h1>
             <p style={{ fontSize: 12, color: "var(--tg-text-secondary)", marginTop: 1 }}>
-              القناة · 4.2K متابع
+              Channel · 4.2K followers
             </p>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function Home() {
           onMouseEnter={e => (e.currentTarget.style.background = "var(--tg-blue-hover)")}
           onMouseLeave={e => (e.currentTarget.style.background = "var(--tg-blue)")}
         >
-          انضم للقناة
+          Join Channel
         </a>
       </header>
 
@@ -92,7 +92,7 @@ export default function Home() {
         }}>
           <img
             src="/logo.jpeg"
-            alt="الذهب/الدولار ماستر🔰"
+            alt="Gold/USD Master 🔰"
             style={{
               width: 96,
               height: 96,
@@ -102,9 +102,9 @@ export default function Home() {
               boxShadow: "0 4px 16px rgba(42,171,238,0.3)",
             }}
           />
-          <div style={{ fontSize: 22, fontWeight: 700, color: "var(--tg-text-primary)" }}>الذهب/الدولار ماستر🔰</div>
+          <div style={{ fontSize: 22, fontWeight: 700, color: "var(--tg-text-primary)" }}>Gold/USD Master 🔰</div>
           <div style={{ fontSize: 13, color: "var(--tg-text-secondary)", marginTop: 8, lineHeight: 1.7 }}>
-            إشارات الذهب المميزة · تداول دقيق · تحليل يومي
+            Premium Gold Signals · Precise Trading · Daily Analysis
           </div>
           <div style={{
             display: "inline-flex",
@@ -127,12 +127,12 @@ export default function Home() {
               display: "inline-block",
               animation: "pulse 1.5s infinite",
             }} />
-            القناة الرسمية
+            Official Channel
           </div>
 
           <div style={{ borderTop: "1px solid var(--tg-panel-light)", margin: "20px -24px 0", padding: "16px 24px 0" }}>
             <p style={{ fontSize: 12, color: "var(--tg-text-secondary)", textAlign: "center", marginBottom: 12 }}>
-              احصل على إشارات XAUUSD اليومية وتحليل سوق الذهب — انضم إلينا على تيليجرام
+              Get Daily XAUUSD Signals and Gold Market Analysis — Join Us on Telegram
             </p>
             <a
               href={CHANNEL_URL}
@@ -164,7 +164,7 @@ export default function Home() {
               }}
             >
               <TelegramIcon />
-              تابع الذهب/الدولار ماستر🔰
+              Follow Gold/USD Master 🔰
             </a>
           </div>
         </div>
@@ -177,20 +177,20 @@ export default function Home() {
           maxWidth: 360,
           width: "100%",
           border: "1px solid var(--tg-panel-light)",
-          textAlign: "right",
+          textAlign: "left",
         }}>
           <div style={{ fontSize: 15, fontWeight: 700, color: "var(--tg-blue)", marginBottom: 14 }}>
-            📈 إشارات احترافية لتداول الذهب (XAUUSD)
+            📈 Professional Gold Trading Signals (XAUUSD)
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 10, fontSize: 13, color: "var(--tg-text-primary)", lineHeight: 1.8 }}>
-            <div>🎯 إشارات يومية دقيقة</div>
-            <div>📊 تحليلات احترافية للسوق</div>
-            <div>💰 نستهدف حتى 5000 نقطة (Pips) أسبوعيًا حسب ظروف السوق</div>
-            <div>🛡️ إدارة مخاطر ورأس مال باحترافية</div>
-            <div>⚡ تحديثات مباشرة ودعم مستمر</div>
+            <div>🎯 Accurate Daily Signals</div>
+            <div>📊 Professional Market Analysis</div>
+            <div>💰 Targeting up to 5000 Pips weekly (subject to market conditions)</div>
+            <div>🛡️ Professional Risk &amp; Capital Management</div>
+            <div>⚡ Live Updates &amp; Continuous Support</div>
           </div>
           <div style={{ fontSize: 14, fontWeight: 600, color: "var(--tg-blue)", marginTop: 14 }}>
-            🚀 انضم إلينا وابدأ التداول بثقة.
+            🚀 Join us and start trading with confidence.
           </div>
         </div>
       </div>

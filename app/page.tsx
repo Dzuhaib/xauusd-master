@@ -26,7 +26,7 @@ export default function Home() {
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <img
             src="/logo.jpeg"
-            alt="Gold/USD Master 🔰"
+            alt="الذهب/الدولار ماستر🔰"
             style={{
               width: 46,
               height: 46,
@@ -38,7 +38,7 @@ export default function Home() {
           />
           <div>
             <h1 style={{ fontSize: 16, fontWeight: 700, color: "var(--tg-text-primary)", letterSpacing: 0.3 }}>
-              Gold/USD Master 🔰
+              الذهب/الدولار ماستر🔰
             </h1>
             <p style={{ fontSize: 12, color: "var(--tg-text-secondary)", marginTop: 1 }}>
               Channel · 4.2K followers
@@ -92,7 +92,7 @@ export default function Home() {
         }}>
           <img
             src="/logo.jpeg"
-            alt="Gold/USD Master 🔰"
+            alt="الذهب/الدولار ماستر🔰"
             style={{
               width: 96,
               height: 96,
@@ -102,7 +102,7 @@ export default function Home() {
               boxShadow: "0 4px 16px rgba(42,171,238,0.3)",
             }}
           />
-          <div style={{ fontSize: 22, fontWeight: 700, color: "var(--tg-text-primary)" }}>Gold/USD Master 🔰</div>
+          <div style={{ fontSize: 22, fontWeight: 700, color: "var(--tg-text-primary)" }}>الذهب/الدولار ماستر🔰</div>
           <div style={{ fontSize: 13, color: "var(--tg-text-secondary)", marginTop: 8, lineHeight: 1.7 }}>
             Premium Gold Signals · Precise Trading · Daily Analysis
           </div>
@@ -164,7 +164,7 @@ export default function Home() {
               }}
             >
               <TelegramIcon />
-              Follow Gold/USD Master 🔰
+              Follow الذهب/الدولار ماستر🔰
             </a>
           </div>
         </div>

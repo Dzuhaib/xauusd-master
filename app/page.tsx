@@ -98,6 +98,7 @@ export default function Home() {
               height: 96,
               borderRadius: "50%",
               objectFit: "cover",
+              marginTop: 50,
               marginBottom: 16,
               boxShadow: "0 4px 16px rgba(42,171,238,0.3)",
             }}
